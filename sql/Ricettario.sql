@@ -93,7 +93,8 @@ CREATE TABLE Ricette (
 -- Table structure for table sessions
 -- 
 
-CREATE TABLE Sessions ( Id varchar(80) NOT NULL default '', 
+CREATE TABLE Sessioni ( 
+	Id varchar(80) NOT NULL default '', 
 	UserId int(10) unsigned NOT NULL default '0', 
 	Username varchar(16) NOT NULL default '', 
 	CookieOK char(1) NOT NULL default '', 
@@ -101,8 +102,8 @@ CREATE TABLE Sessions ( Id varchar(80) NOT NULL default '',
 	Ts timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, 
 	PRIMARY KEY  (Id), 
 	UNIQUE KEY UserId (UserId), 
-	KEY ts (ts),
-	FOREIGN KEY (userId) REFERENCES Utenti (Id) 
+	KEY Ts (Ts),
+	FOREIGN KEY (UserId) REFERENCES Utenti(Id) 
 		ON DELETE CASCADE ON UPDATE CASCADE
 	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -139,15 +140,6 @@ CREATE TABLE Utenti (
 -- 
 -- Constraints for dumped tables
 -- 
-
--- 
--- Constraints for table Categorie
--- 
-ALTER TABLE Categorie 
-	ADD CONSTRAINT Categorie_ibfk_1 
-	FOREIGN KEY (Parent) 
-	REFERENCES Categorie (Id) 
-	ON DELETE CASCADE ON UPDATE CASCADE;
 
 
 -- 
