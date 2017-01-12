@@ -6,12 +6,24 @@
 -- Also included is a default set of Unita types that should cover most cases,
 -- as well as a starter set of Categorie.  New ones can be Data_aggiunta from within
 -- the software, using the Manage Unitas or Manage Categorie pages.
--- Ingredientei are Data_aggiunta dynamically as they are entered into recipes.
+-- Ingredienti are Data_aggiunta dynamically as they are entered into recipes.
 --
 -- Database: recipes
 -- 
 
 -- --------------------------------------------------------
+
+set foreign_key_checks=0;
+drop table if exists Categorie;
+drop table if exists Ingredienti;
+drop table if exists Ingredienti_ricette;
+drop table if exists Ricette;
+drop table if exists Sessioni;
+drop table if exists Unita;
+drop table if exists Bevande;
+drop table if exists PrenotazioniPiatti;
+drop table if exists Prenotazioni;
+drop table if exists Utenti;
 
 -- 
 -- Table structure for table Categorie
@@ -32,7 +44,7 @@ CREATE TABLE Categorie (
 -- --------------------------------------------------------
 
 -- 
--- Table structure for table Ingredientei
+-- Table structure for table Ingredienti
 -- 
 
 CREATE TABLE Ingredienti ( 
@@ -44,7 +56,7 @@ CREATE TABLE Ingredienti (
 -- --------------------------------------------------------
 
 -- 
--- Table structure for table Ingredientei_ricette
+-- Table structure for table Ingredienti_ricette
 -- 
 
 CREATE TABLE Ingredienti_ricette ( 
