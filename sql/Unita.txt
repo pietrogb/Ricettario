@@ -1,0 +1,19 @@
+1	can	cans
+2	dash	dashes
+3	package	packages
+4		
+5	pound	pounds
+6	each	each
+7	pinch	pinches
+8	kilogram	kilograms
+9	gram	grams
+10	fluId ounce	fluId ounces
+11	ounce	ounces
+12	liter	liters
+13	mililiter	mililiters
+14	gallon	gallons
+15	quart	quarts
+16	pint	pints
+17	cup	cups
+18	tablespoon	tablespoons
+19	teaspoon	teaspoons

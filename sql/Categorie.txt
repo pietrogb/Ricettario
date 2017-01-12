@@ -1,0 +1,16 @@
+1	Main	NULL
+2	Entrees	1
+3	Desserts	1
+4	SIde Dishes	1
+5	Appetizers	1
+6	Salads	1
+7	Cakes	3
+8	Cookies	3
+9	Pies	3
+10	Other	3
+11	Poultry	2
+12	Meat	2
+13	Beverages	1
+14	Seafood	2
+15	Soups and Stews	1
+16	Other		2

@@ -1,0 +1,2 @@
+LOAD DATA LOCAL INFILE 'Categorie.txt' INTO TABLE Categore;
+LOAD DATA LOCAL INFILE 'Unita.txt' INTO TABLE Unita;
